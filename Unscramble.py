@@ -1,4 +1,6 @@
+# -*- coding: utf8 -*-
 # v3.1
+
 from random import seed, sample, choice
 
 seed()
@@ -17,7 +19,7 @@ def menu():
     print("ESCOLHA O NIVEL DE DIFICULDADE DIGITANDO O NUMERO CORRESPONDENTE: \n")
     print("1 - Iniciante / Soletrando")
     print("2 - Veterano / Nota mil no ENEM")
-    print("3 - Genio / Eminem rap god")
+    print("3 - Gênio / Eminem rap god")
     nivel = input()
     regras()
     play = input("Vamos jogar? [S/N]: \n").lower()
@@ -26,7 +28,7 @@ def menu():
     elif play == 'n':
         quit_game()
     else:
-        print("Opcao invalida, tente novamente.\n")
+        print("Opção inválida, tente novamente.\n")
         menu()
 
 
@@ -35,20 +37,20 @@ def regras():
 
     def regras_nv1():
         print("Cada palavra correta na primeira tentativa vale 3 pontos.")
-        print("Caso a primeira tentativa esteja incorreta, voce tera uma dica.")
+        print("Caso a primeira tentativa esteja incorreta, voce terá uma dica.")
         print("Cada acerto na segunda tentativa vale 1 ponto.")
-        print("Em caso de dois erros na mesma palavra, nenhum ponto sera computado.")
+        print("Em caso de dois erros na mesma palavra, nenhum ponto será computado.")
 
     def regras_nv2():
         print("Cada palavra correta na primeira tentativa vale 5 pontos.")
-        print("Caso a primeira tentativa esteja incorreta, voce tera uma dica.")
+        print("Caso a primeira tentativa esteja incorreta, voce terá uma dica.")
         print("Cada acerto na segunda tentativa vale 3 pontos.")
-        print("Em caso de dois erros na mesma palavra, sera computado 1 ponto.")
+        print("Em caso de dois erros na mesma palavra, será computado 1 ponto.")
 
     def regras_nv3():
         print("Cada palavra correta vale 10 pontos.")
-        print("Neste nivel voce nao tera dica.")
-        print("Em caso de erro, nenhum ponto sera computado.")
+        print("Neste nivel você não terá dica.")
+        print("Em caso de erro, nenhum ponto será computado.")
 
     print("REGRAS: \n")
     if nivel == "1":
@@ -58,7 +60,7 @@ def regras():
     elif nivel == "3":
         regras_nv3()
     else:
-        print("Opcao invalida, tente novamente.\n")
+        print("Opção inválida, tente novamente.\n")
         menu()
     print("Todas as palavras devem ser digitadas sem acentos ou cedilha.")
     print("BOA SORTE!")
