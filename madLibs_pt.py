@@ -40,7 +40,7 @@ corpo2 = input('Digite uma parte do corpo no masculino singular. Ex: olho, cabel
 adj4 = input('Digite um adjetivo masculino no singular. Ex: estranho, maluco. \n')
 wingman = input('Digite um substantivo comum masculino no singular. Ex: carro, poste \n').capitalize()
 obj = input('Digite um substantivo comum no plural. Ex: pedras, fios. \n')
-verbo = input('Digite um verbo no infinitivo. Ex: comer, pular, sair.'\n)
+verbo = input('Digite um verbo no infinitivo. Ex: comer, pular, sair. \n')
 
 print('\n'*100)
 
