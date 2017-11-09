@@ -3,8 +3,6 @@
 from random import randrange
 from time import sleep
 
-#def limpaTela()
-
 print('-='*15)
 print('WELCOME TO PY-RACE'.center(30))
 print('-='*15)
@@ -43,11 +41,14 @@ required_to_win = 0
 
 bonuspos = []
 losspos = []
+loss = 5
+bonus = 5
 
 for i in range(5):
     bonuspos.append(randrange(2,30))
 
-#print(bonuspos)
+# FAZER A LISTA SEM REPETIÇÕES
+print(bonuspos)
 
 # colocando as posições da lista de desvantagens
 
@@ -56,12 +57,12 @@ while len(losspos) < 5:
     if num not in bonuspos:
         losspos.append(num)
 
-#print(losspos)
+print(losspos)
 
 # criando a lista com os bônus
 
-bonus = ['ANDE UMA CASA', 'ANDE DUAS CASAS', 'ANDE TRÊS CASAS', 'ANDE QUATRO CASAS', 'RODADA BÔNUS! JOGUE MAIS UMA VEZ']
-loss = ['VOLTE UMA CASA', 'VOLTE DUAS CASAS', 'VOLTE TRÊS CASAS', 'VOLTE QUATRO CASAS', 'PASSE A VEZ']
+#bonus = ['ANDE UMA CASA', 'ANDE DUAS CASAS', 'ANDE TRÊS CASAS', 'ANDE QUATRO CASAS', 'RODADA BÔNUS! JOGUE MAIS UMA VEZ']
+#loss = ['VOLTE UMA CASA', 'VOLTE DUAS CASAS', 'VOLTE TRÊS CASAS', 'VOLTE QUATRO CASAS', 'PASSE A VEZ']
 
 def rolaDados():
     
@@ -79,7 +80,7 @@ while p1_pos <= 30 or p2_pos <= 30:
     if vez % 2 == 1:
         
         print('\nVez de {}: '.format(p1))
-        vez+=1
+        vez += 1
         
         rolaDados()
         required_to_win = 30 - p1_pos
@@ -94,6 +95,16 @@ while p1_pos <= 30 or p2_pos <= 30:
                 p1_pos += dado
         
         print('Posição de {}: {}'.format(p1, p1_pos))
+        
+        if p1_pos in losspos:
+            print('Ah não! Um obstáculo no caminho!')
+            print('Volte 5 casas!!')
+            p1_pos -= 5
+            
+            if p1_pos < 0:
+                p1_pos = 0
+                
+            print('Posição de {}: {}'.format(p1, p1_pos))
     
     else:
         
@@ -113,6 +124,16 @@ while p1_pos <= 30 or p2_pos <= 30:
                 p2_pos += dado
         
         print('Posição de {}: {}'.format(p2, p2_pos))
+        
+        if p2_pos in losspos:
+            print('Ah não! Um obstáculo no caminho!')
+            print('Volte 5 casas!!')
+            p2_pos -= 5
+            
+            if p2_pos < 0:
+                p2_pos = 0
+                
+            print('Posição de {}: {}'.format(p2, p2_pos))
 
 
     
