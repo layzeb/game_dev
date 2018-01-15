@@ -14,3 +14,10 @@
 * [Frogmind](http://frogmind.com)
 * [Playdead](http://playdead.com)
 
+## Engines, Plataforms and Libs For Study
+
+* [Pygame](https://www.pygame.org/news)
+* [Godot](https://godotengine.org/)
+* [Scratch](https://scratch.mit.edu/)
+* [CodeCombat](https://codecombat.com)
+* [Construct2](https://www.scirra.com/construct2)
