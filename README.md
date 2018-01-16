@@ -1,21 +1,18 @@
-Destinada a criação de pequenos games (alguns de autoria própria) feitos usando a linguagem Python 3
 
->>>(de)crypt - programa que criptografa um determinado texto e faz o processo reverso, usando o método cesar cipher
+## Este repositório tem como objetivo ser um guia de estudo e orientação de programação de jogos em quaisquer tecnologias.
 
->>>CaraOuCoroa - simples jogo de cara ou coroa contra o computador
+### Fórum
 
->>>CrazyRPG - complete os campos com as palavras de classificação solicitada e monte sua própria história
+Utilize as issues para discussão em fórum;
 
->>>Horóscopo - pede data de nascimento e informa idade, signo e suas características. Mostra quantos dias faltam ou há quantos dias foram seu aniversário, parabenizando-o caso o dia seja o informado.
+### Projetos
 
->>>Login - simples programa que cria um conta de usuário e realiza o login
+Você pode adicionar seus projetos de estudos e/ou pequenos projetos no diretório [`Small Projects`](small-projects.md);
 
->>>ParOuImpar - jogo de par ou ímpar contra o computador. Mostra o número de rodadas disputadas e o placar final
+Para projetos mais elaborados, vocêmpode criar um diretório de trabalho específico para ele.
 
->>>PyRace - jogo que usa dados para ajudar a percorrer um caminho numerado, que possui bônus e punições, no estilo LUDO.
+### Guias
 
->>>Pysilisco - clássico arcade jogo da cobrinha ou snake, feito com pygame
+Os guias são links (de sites, artigos, etc...), livros, cursos e quaisquer outras recomendações relevantes para o estudos de programação com jogos digitais.
 
->>>Unscramble - jogo que mostra palavras embaralhadas de temas diversos e pede para o usuário descobri-las. também possui sistema de dicas, dificuldade, pontuação e relatório de aproveitamento. (ainda) não salva dados de vários jogadores.
-
->>>Adivinhe_o_numero - jogo que sorteia um número aleatório e pede para o usuário adivinhar.
+[Veja os Guias Aqui](guias.md).
